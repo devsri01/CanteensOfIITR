@@ -1,0 +1,74 @@
+body{background-image:url(canteenmenu.jpg); background-size: 1200px 2000px;
+	  background-repeat: no-repeat;
+	  background-position: center center;}
+
+.heading{
+	padding-top: 5px;
+	color: #E4F6F8 ;
+	font-size: 100px;}
+
+
+.rate {padding-top: 15px;
+    float: right;
+    height: 46px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:50px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+.star{padding-top: 18px;
+    font-size: 50px;
+    color: lightyellow;}
+
+.names{color: #B5651D;}
+
+th, td {
+  padding: 20px;
+}
+
+table,tr{
+  border: 3px solid white;
+}
+table{border-color:white;
+    bottom-border:3px;}
+.styling{background-color:#ffb347 ;
+    background-size: auto;
+     opacity: 0.8;
+    color: black;
+    padding-top: 25px; }
+.views{padding-top: 10px;}
+ .views input{
+ width: 375px;
+ height: 65px;
+}
+.food{color:lightyellow;
+    font-size:60px;
+    font-family: times;}
